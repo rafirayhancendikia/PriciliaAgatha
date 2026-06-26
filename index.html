@@ -195,6 +195,7 @@
     const zone = document.getElementById("zone");
     const yesBtn = document.getElementById("yesBtn");
     const noBtn = document.getElementById("noBtn");
+    const title = document.getElementById("title");
     const result = document.getElementById("result");
     const hint = document.getElementById("hint");
 
@@ -291,6 +292,7 @@
 
     /* ---------- YES CLICK ---------- */
     yesBtn.addEventListener("click", () => {
+      title.style.display = "none"; 
       zone.style.display = "none";
       hint.style.display = "none";     // HIDE THE HINT
       result.style.display = "block";
